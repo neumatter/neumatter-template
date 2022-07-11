@@ -1,0 +1,11 @@
+
+{{# extends App #}}
+
+{{# block Body #}}
+
+<div class="t-align/center">
+  <h1>Status: 404</h1>
+  <p>{{ err || 'Page Not Found' }}</p>
+</div>
+
+{{# end Body #}}

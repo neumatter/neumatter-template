@@ -1,0 +1,50 @@
+<html>
+    {{# importBlock('../components/Head') #}}
+  <body>
+<nav data-nav="top" data-offset="navbar" class="c-navbar a-bg/dark-blur u-fixed u-top" role="navigation" aria-label="main navigation">
+  <div class="c-navbar-wrapper" data-theme="dark">
+    <div id="navbarNM" class="c-menu u-flex-row">
+      <button id="gobackhistory" class="c-nav-link u-flex-grow/1 t-align/center a-rounded/50 a-bg/concave:active a-bg/concave:hover">
+        <i class="bi bi-arrow-left-circle-fill"></i> back
+      </button>
+      <a class="c-nav-link u-flex-grow/1 t-align/center a-rounded/50 a-bg/concave:active a-bg/concave:hover" href="/">
+        Home
+      </a>
+      <a class="c-nav-link u-flex-grow/1 t-align/center a-rounded/50 a-bg/concave:active a-bg/concave:hover" href="/products/NM587/id32">
+        NM587/id32
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="l-row l-has-sidebar u-flex-shrink/0 u-mx/0 u-min-vh/100 u-mb/0 c-webkit-scrollbars">
+<div class="l-sidebar:md a-bg-color/1">
+    <div class="l-wrapper/viewport:md">
+        <div class="u-offset/4"></div>
+        <p id="npmCopy" class="u-m/system-50 u-p/system-50 a-rounded/50 a-bg-color/1 a-glow/primary t-type/secondary a-text-color/base">
+            <b>{{ locals.currentUrl }}</b>
+        </p>
+        <theme-button class="c-btn c-theme-btn a-bg/convex-small a-rounded/50 a-bg/concave:hover u-m/system-50"></theme-button>
+        <nav id="myNavbar2" class="c-navbar a-rounded u-position/sticky u-top/5" role="navigation" aria-label="main navigation">
+            <div class="c-navbar-wrapper">
+                <div id="navbarNM" class="c-menu c-tabs">
+                  
+                    <input type="radio" data-nav="tab" name="tab" id="tab-1"/>
+                    <label for="tab-1">
+                        <a href="/" class="c-nav-link u-mt/system-50 a-bg/convex-small a-rounded/50 a-bg/concave:hover">
+                          <b>Home</b>
+                        </a>
+                    </label>
+                      <div class="c-tab">
+                          <a class="c-nav-link a-rounded/50 a-bg/concave:hover a-bg/concave:active a-text-color/n1" href="#">minor.version</a>
+                      </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="l-wrapper/viewport:md u-offset/4">
+  {{# import Body #}}
+</div>
+  </body>
+</html>

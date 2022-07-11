@@ -1,0 +1,10 @@
+
+{{# extends App #}}
+
+{{# block Body #}}
+
+<div class="t-align/center">
+  <h1>Hello World!</h1>
+</div>
+
+{{# end Body #}}
